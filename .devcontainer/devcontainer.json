@@ -1,5 +1,5 @@
 {
-  "name": "Node.js remote container dev",
+  "name": "Hono + prisma + Cloudflare Workers remote container dev",
   "dockerComposeFile": ["docker-compose.yml"],
   "service": "app",
   "workspaceFolder": "/usr/src",

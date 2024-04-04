@@ -6,7 +6,7 @@ services:
   app:
     build: .
     image: slowhand/nodejs
-    container_name: "nodejs"
+    container_name: "hono-prisma-workers"
     volumes:
       - ..:/usr/src
       - modules_data:/usr/src/node_modules
