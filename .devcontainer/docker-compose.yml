@@ -1,0 +1,14 @@
+version: '3.8'
+volumes:
+  modules_data:
+
+services:
+  app:
+    build: .
+    image: slowhand/nodejs
+    container_name: "nodejs"
+    volumes:
+      - ..:/usr/src
+      - modules_data:/usr/src/node_modules
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    working_dir: /usr/src
