@@ -1,6 +1,7 @@
-version: '3.8'
+version: "3.8"
 volumes:
   modules_data:
+  wrangler_data:
 
 services:
   app:
@@ -10,5 +11,8 @@ services:
     volumes:
       - ..:/usr/src
       - modules_data:/usr/src/node_modules
+      - wrangler_data:/home/vscode/.config/.wrangler
     command: /bin/sh -c "while sleep 1000; do :; done"
     working_dir: /usr/src
+    ports:
+      - "8787:8787"
