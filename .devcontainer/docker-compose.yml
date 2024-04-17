@@ -17,6 +17,7 @@ services:
     working_dir: /usr/src
     ports:
       - "8787:8787"
+      - "5555:5555"
   db:
     image: postgres:16.2
     container_name: postgres_pta
