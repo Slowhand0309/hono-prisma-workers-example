@@ -2,6 +2,7 @@ version: "3.8"
 volumes:
   modules_data:
   wrangler_data:
+  db_data:
 
 services:
   app:
@@ -16,3 +17,13 @@ services:
     working_dir: /usr/src
     ports:
       - "8787:8787"
+  db:
+    image: postgres:16.2
+    container_name: postgres_pta
+    ports:
+      - 5432:5432
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
