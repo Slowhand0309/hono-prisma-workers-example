@@ -1,5 +1,6 @@
 name = "hono-prisma-workers-example"
 compatibility_date = "2023-12-01"
+node_compat = true
 
 [dev]
 ip = "0.0.0.0"
