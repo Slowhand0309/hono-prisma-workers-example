@@ -1,8 +1,5 @@
-```
-npm install
-npm run dev
-```
+# Cloudflare Workers + Hono + Prisma Example
 
-```
-npm run deploy
-```
+- [Cloudflare Workers](https://developers.cloudflare.com/workers/)
+- [Hono](https://hono.dev/)
+- [Prisma](https://www.prisma.io/)
